@@ -1,38 +1,97 @@
-.App {
+body {
+  background: beige;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(120deg, #22c1c3 0%, #22c1c3 100%);
   color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.headerTodo {
+  color: black;
+  font-size: 2rem;
+  font-family: monospace;
 }
+.input_todo {
+  color: black;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: larger;
+  font-weight: bold;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /*display: block;
+    width: 100%;
+    padding-top: 36.6666666667px;
+    border: none;
+    border-radius: 0;
+    color: white;
+    background: #333;
+    font-size: 36.6666666667px;
+    transition: 0.3s ease;*/
+}
+.button_todo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-image: url(https://image.shutterstock.com/image-vector/plus-sign-icon-positive-symbol-260nw-1147358093.jpg);
+  background-size: 38px 40px;
+  background-repeat: no-repeat;
+}
+.button_todo_text {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.todo_options {
+  display: inline-block;
+  font-weight: bold;
+}
+.select_todo {
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  background: #fdbb2d;
+  color: black;
+  font-weight: bold;
+}
+.todo_button_complete {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url("https://www.publicdomainpictures.net/pictures/130000/velka/check-mark-icon.jpg");
+  background-size: cover;
+  margin: 0px 5px 5px 5px;
+}
+.todo_button_trash {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url("https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png");
+  background-size: cover;
+}
+.list_todo {
+  list-style-type: none;
+}
+.todo_div {
+  display: flex;
+  font-weight: bold;
+  color: black;
+}
+.container_todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.completed_todo {
+  text-decoration: line-through;
+  color: black;
+  opacity: 0.5;
+}
+.normal_todo {
+  color: black;
 }
