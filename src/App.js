@@ -34,7 +34,7 @@ function App() {
     //console.log('hello');
     filterHandler();
     saveLocalTodos();
-  }, [todos, status]);
+  }, [todos, status]); 
 
   //Functions
 
